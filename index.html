@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ferrero Rocher Delight</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Indulge in the World of Ferrero Rocher</h1>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>About Ferrero Rocher</h2>
+            <p>Ferrero Rocher is a premium chocolate confection created by the Italian company Ferrero in 1982. It features a whole roasted hazelnut surrounded by a wafer shell filled with hazelnut chocolate, coated in milk chocolate, and adorned with chopped hazelnuts. Packaged in distinctive gold foil wrapping, Ferrero Rocher has become a globally popular luxury treat, often chosen for gifts and special occasions. The company Ferrero, known for its high-quality confections, also produces other well-known products such as Nutella and Kinder.</p>
+        </section>
+
+        <section id="imagery">
+           
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/fr2.jpeg" alt="Ferrero Rocher 1" width="100px " height="400px">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/fr0.jpeg" alt="Ferrero Rocher 2"width="500px " height="500px">
+               
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/fr3.jpeg" alt="Ferrero Rocher 3"width="100px " height="500px">
+              
+                </div>
+            </div>
+        </section>
+
+        <section id="nutrition">
+            <h2>Nutritional Information</h2>
+            <p>Calories: 73 per piece</p>
+            <p>Total Fat: 5g</p>
+            <p>Carbohydrates: 6g</p>
+            <p>Protein: 1g</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Ferrero Rocher logo">
+            </div>
+            <div class="company-info">
+                <p>Ferrero Rocher</p>
+                <p>Italy</p>
+            </div>
+            <div class="contact-form">
+                <p>Contact Us:</p>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <button>Submit</button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Slideshow functionality
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); 
+}
+
+    </script>
+
+</body>
+</html>
